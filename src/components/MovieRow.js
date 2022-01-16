@@ -31,7 +31,7 @@ const MovieRow = ({ title, items }) => {
     <div className="movieRow">
       <h2>{ title }</h2>
       <div
-        role="navigation"
+        role="presentation"
         className="movieRow--left"
         onClick={ handleLeftArrow }
         onKeyDown={ handleLeftArrow }
@@ -39,7 +39,7 @@ const MovieRow = ({ title, items }) => {
         <NavigateBeforeIcon style={ { fontSize: 50 } } />
       </div>
       <div
-        role="navigation"
+        role="presentation"
         className="movieRow--right"
         onClick={ handleRightArow }
         onKeyDown={ handleRightArow }
