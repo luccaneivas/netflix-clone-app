@@ -30,10 +30,20 @@ const MovieRow = ({ title, items }) => {
   return (
     <div className="movieRow">
       <h2>{ title }</h2>
-      <div role="img" className="movieRow--left" onClick={ handleLeftArrow }>
+      <div
+        role="navigation"
+        className="movieRow--left"
+        onClick={ handleLeftArrow }
+        onKeyDown={ handleLeftArrow }
+      >
         <NavigateBeforeIcon style={ { fontSize: 50 } } />
       </div>
-      <div role="img" className="movieRow--right" onClick={ handleRightArow }>
+      <div
+        role="navigation"
+        className="movieRow--right"
+        onClick={ handleRightArow }
+        onKeyDown={ handleRightArow }
+      >
         <NavigateNextIcon style={ { fontSize: 50 } } />
       </div>
       <div className="movieRow--listarea">
