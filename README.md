@@ -1,2 +1,2 @@
-# React Clone
+# Netflix Clone
 ### Created for study
